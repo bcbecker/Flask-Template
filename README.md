@@ -17,7 +17,7 @@ Bash script for generating a "starter code" template for basic Flask APIs. It fo
 ```
 
 ## Setup
-At the top of the script you'll find all the variables for setting the tex that is echoed into each file. If you want to use the default code, you'll only have to change two variables, WORKDIR and FLASK_APP_NAME. WORKDIR is the directory in which you want the flask template to be created, and FLASK_APP_NAME is the name of the template.
+At the top of the script you'll find all the variables for setting the text that is echoed into each file. If you want to use the default code, you'll only have to change two variables, WORKDIR and FLASK_APP_NAME. WORKDIR is the directory in which you want the flask template to be created, and FLASK_APP_NAME is the name of the template.
 ```bash
 WORKDIR="../Python Projects/Flask/"
 FLASK_APP_NAME="flask_app"
