@@ -4,6 +4,7 @@ WORKDIR="../Python Projects/Flask/"
 
 #CONFIG: text within each file (might be a cleaner way to do this)
 FLASK_APP_NAME="flask_app"
+
 CONFIG_TEXT="import os
 
 
@@ -44,6 +45,8 @@ app = create_app()
 
 if __name__ == \"__main__\":
     app.run()"
+
+APP_INIT="#For packaging"
 
 API_INIT="from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -126,7 +129,7 @@ echo "$RUN_TEXT" > run.py
 #enter app, create init for packaging
 cd app
 touch __init__.py
-echo "#For packaging" > __init__.py
+echo "$APP_INIT" > __init__.py
 
 #create api dir, enter api dir
 mkdir api
