@@ -1,8 +1,22 @@
 #!/bin/bash
+################################################################################
+#                              Flask App Template                              #
+#                                                                              #
+# This script creates a basic Flask app with best practices file structure     #
+# and starter template code to get your project off the ground quicker.        #
+#                                                                              #
+# Change History                                                               #
+# 12/18/2021  bcbecker    Original code.                                       #
+#                                                                              #
+#                                                                              #
+################################################################################
+################################################################################
+################################################################################
+
+
 #set the working dir relative to the current dir
 WORKDIR="../Python Projects/Flask/"
 
-#CONFIG: text within each file (might be a cleaner way to do this)
 FLASK_APP_NAME="flask_app"
 
 CONFIG_TEXT="import os
@@ -103,8 +117,9 @@ def signup():
 def login():
     return make_response(jsonify({'user' : 'test'}), 200)"
 
-
-########################## START COMMANDS ##########################
+################################################################################
+############################## START COMMANDS ##################################
+################################################################################
 
 #change to working dir, print to console
 cd "$WORKDIR"
