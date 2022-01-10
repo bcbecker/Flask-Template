@@ -1,0 +1,16 @@
+from flask import request, jsonify, make_response, Blueprint
+from .. import db, bcrypt
+from ..models import User
+  
+
+auth = Blueprint('auth', __name__)
+
+  
+@auth.route('/signup', methods =['POST'])
+def signup():
+    return make_response(jsonify({'user' : 'test'}), 201)
+
+
+@auth.route('/login', methods =['POST'])
+def login():
+    return make_response(jsonify({'user' : 'test'}), 200)
