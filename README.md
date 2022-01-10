@@ -3,16 +3,20 @@ Bash script for generating a "starter code" template for basic Flask APIs. It fo
 
 ## App Structure
 ```bash
-~/flask_app
+~/flask_server
     |-- run.py
     |-- config.py
+    |__ requirements.txt
     |__ .env
     |__ /app
          |-- __init__.py
+         |-- models.py
          |-- /api
              |-- __init__.py
-             |-- models.py
              |-- routes.py
+    |__ /tests
+         |-- __init__.py
+         |-- test_app.py
 
 ```
 
@@ -27,6 +31,12 @@ Get yourself a nice Linux or Unix-based system, and make sure you give this file
  chmod +x flask_api_template.sh
  ```
  Note: the .sh extension is optional, since Linux doesn't care about file extensions
+
+### Adding new files
+The template_files directory is set up to mimic the file structure of the app it will create. You can add/remove/alter these text files as needed. If adding/removing files, you must add/remove the appropriate variable under the VARIABLES section, so it is read and stored by the script.
+```bash
+YOUR_FILE_TEXT=$(<template_files/<PATH>/YOUR_FILE.txt)
+```
 
 ## Running the Script
 In whichever directory you store the script, you can simply run:
