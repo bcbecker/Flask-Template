@@ -40,3 +40,10 @@ class TestFlaskApp(unittest.TestCase):
             )
         user.set_password('adminisabadpassword')
         user.save()
+    
+    def test_app(self):
+        '''
+       Verify that the current app is the app set up in the setUp method.
+        '''
+        assert self.app is not None
+        assert current_app == self.app
