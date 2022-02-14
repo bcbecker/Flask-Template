@@ -6,12 +6,12 @@ Bash script for generating a "starter code" template for basic Flask APIs. It fo
 ~/flask_server
     |-- run.py
     |-- config.py
-    |__ requirements.txt
-    |__ .env
+    |-- requirements.txt
+    |-- .env
     |__ /app
          |-- __init__.py
          |-- models.py
-         |-- /api
+         |__ /api
              |-- __init__.py
              |-- routes.py
     |__ /tests
